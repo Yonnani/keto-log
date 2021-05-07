@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonnani's Keto Log</title>
+</head>
+<body>
+    <h1>Yonnani's Keto Log</h1>
+    
+    <form action="">
+        <label for="date">날짜</label>
+        <input type="date" name="date">
+    </form>
+
+    <hr>
+
+    <form action="">
+        <label for="">케톤 수치</label>
+        <select name="ketone-value" id="">
+            <option value="breath">호흡</option>
+            <option value="blood">혈액</option>
+        </select>
+        <input type="number" name="breath-ketone-value" id="">
+        <input type="number" name="blood-ketone-value" id="">
+        <input type="submit" value="저장">
+    </form>
+
+    <form action="">
+        <div>
+            <label for="menu">메뉴</label>
+            <input type="text" name="menu" id="menu">
+        </div>
+        <div>
+            <label for="ingredient">재료</label>
+            <textarea name="ingredient" id="ingredient" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="저장">
+    </form>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>시간</th>
+                <th>메뉴</th>
+                <th>재료</th>
+                <th>몸상태</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10:00</td>
+                <td colspan="3">0.5 mmol</td>
+            </tr>
+            <tr>
+                <td rowspan="2">14:23</td>
+                <td>돼지국밥</td>
+                <td>
+                    <ul>
+                        <li>돼지고기</li>
+                        <li>부추</li>
+                        <li>다대기</li>
+                    </ul>
+                </td>
+                <td rowspan="2">
+                    <form action="">
+                        <textarea name="health-condition" cols="30" rows="10"></textarea>
+                        <input type="submit" value="저장">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>김치</td>
+                <td>
+                    <ul>
+                        <li>배추</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
