@@ -1,0 +1,15 @@
+/* reset */
+body, h1, form {
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: inherit;
+}
+
+
+/* style */
+.hide {
+    display: none;
+}
